@@ -1,0 +1,88 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    height: 100px;
+    background-color: #C2EFD4;
+    padding-right: 50px;
+}
+
+.header .logo{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #224F34;
+    text-decoration: none;
+    padding-left: 40px;
+}
+
+.navbar{
+    display: flex;
+    gap: 50px;
+}
+
+.navbar a{
+    color: #224F34;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 2rem;
+}
+
+.navbar a:hover{
+    color: #0077cc;
+}
+
+.header .login-btn{
+    font-size: 1.5rem;
+    padding: 8px 16px;
+    background-color: #C2EFD4;
+    border-radius: 4px;
+
+    
+}
+
+
+.hero-text-container{
+    padding-left: 80px;
+
+}
+
+.heroSection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C2EFD4;
+    gap: 50px;
+
+}
+
+
+.hero-text{
+    font-size: 6rem;
+    color: #224F34;
+
+
+}
+
+.hero-subtext{
+    font-size: 3rem;
+    color: #267D49;
+
+}
+
+
+
+.hero-image{
+    max-width: 900px;
+    padding-left: 70px;
+}
+
+.explore-btn{
+    border: none;
+    font-size: 1.5rem;
+    color: white;
+    padding:20px;
+    background: #224F34;
+    border-radius: 4px;
+    button-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
