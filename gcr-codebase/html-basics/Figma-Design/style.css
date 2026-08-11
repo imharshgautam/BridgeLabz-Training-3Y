@@ -1,14 +1,13 @@
-.header{
+.header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 24px;
+    padding: 0 50px 0 24px;
     height: 100px;
     background-color: #C2EFD4;
-    padding-right: 50px;
 }
 
-.header .logo{
+.header .logo {
     font-size: 3rem;
     font-weight: 700;
     color: #224F34;
@@ -16,73 +15,233 @@
     padding-left: 40px;
 }
 
-.navbar{
+.navbar {
     display: flex;
     gap: 50px;
 }
 
-.navbar a{
+.navbar a {
     color: #224F34;
     text-decoration: none;
     font-weight: 500;
     font-size: 2rem;
 }
 
-.navbar a:hover{
+.navbar a:hover {
     color: #0077cc;
 }
 
-.header .login-btn{
+.header .login-btn {
     font-size: 1.5rem;
     padding: 8px 16px;
     background-color: #C2EFD4;
+    border: 1px solid #224F34;
     border-radius: 4px;
-
-    
+    color: #224F34;
+    cursor: pointer;
 }
 
-
-.hero-text-container{
-    padding-left: 80px;
-
-}
-
-.heroSection{
+.heroSection {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #C2EFD4;
     gap: 50px;
-
+    padding: 60px 50px;
 }
 
+.hero-text-container {
+    padding-left: 80px;
+}
 
-.hero-text{
+.hero-text {
     font-size: 6rem;
     color: #224F34;
-
-
+    margin: 0 0 20px;
 }
 
-.hero-subtext{
+.hero-subtext {
     font-size: 3rem;
     color: #267D49;
-
+    margin-bottom: 30px;
 }
 
-
-
-.hero-image{
+.hero-image {
     max-width: 900px;
+    width: 100%;
     padding-left: 70px;
 }
 
-.explore-btn{
+.explore-btn {
     border: none;
     font-size: 1.5rem;
     color: white;
-    padding:20px;
+    padding: 20px 30px;
     background: #224F34;
     border-radius: 4px;
-    button-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.explore-btn:hover {
+    background-color: #267D49;
+}
+
+.sellingSection {
+    text-align: center;
+    background-color: white;
+    padding-bottom: 60px;
+}
+
+.sellingHeading {
+    padding-top: 60px;
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #224F34;
+}
+
+.sellingSection > p {
+    color: #555;
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+}
+
+.productContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 30px;
+}
+
+.productCard {
+    width: 430px;
+    height: 720px;
+    flex-shrink: 0;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.productImage1,
+.productImage2,
+.productImage3 {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    display: block;
+    transform: scale(1.);
+}
+
+.productImage1 {
+    background-color: #7dcb9ad4;
+}
+
+.productImage2 {
+    background-color: #86e1a88f;
+}
+
+.productImage3 {
+    background-color: #7dcb9a49;
+}
+
+.productInfo {
+    padding: 10px 10px 20px;
+}
+
+.productName {
+    font-size: 26px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.productPrice {
+    font-size: 22px;
+    font-weight: bold;
+    color: #444;
+    margin: 0;
+}
+
+.seeall {
+    font-size: 1.5rem;
+    padding: 10px 20px;
+    color: #224F34;
+    background-color: transparent;
+    border: 1px solid #224F34;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.seeall:hover {
+    background-color: #224F34;
+    color: white;
+}
+
+.productsSection {
+    background-color: white;
+    padding: 50px 55px 80px;
+    text-align: center;
+}
+
+.productsHeading {
+    font-size: 3rem;
+    color: #224F34;
+    margin-bottom: 60px;
+}
+
+.productTabs {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 65px;
+}
+
+.productTabs a {
+    text-decoration: none;
+    color: #444;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding-bottom: 8px;
+}
+
+.productTabs a:hover,
+.productTabs .active {
+    color: #224F34;
+    border-bottom: 2px solid #224F34;
+}
+
+.productsGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 70px 28px;
+    max-width: 1650px;
+    margin: auto;
+}
+
+.shopProduct {
+    text-align: center;
+}
+
+.shopProduct img {
+    width: 100%;
+    height: 415px;
+    object-fit: cover;
+    display: block;
+}
+
+.shopProduct h3 {
+    font-size: 1.25rem;
+    color: #333;
+    margin: 25px 0 12px;
+}
+
+.shopProduct p {
+    font-size: 1.15rem;
+    color: #444;
+    margin: 0;
+}
+
+.shopProduct p span {
+    margin: 0 20px;
+    color: #777;
 }
