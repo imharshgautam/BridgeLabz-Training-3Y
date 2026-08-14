@@ -11,6 +11,10 @@
     height: 100px;
     background-color: #C2EFD4;
 }
+body{
+    overscroll-behavior: none;
+overflow-block: auto;    
+}
 
 .header .logo {
     font-size: 3rem;
@@ -95,7 +99,6 @@
 .sellingSection {
     text-align: center;
     background-color: white;
-    padding-bottom: 60px;
 }
 
 .sellingHeading {
@@ -115,10 +118,11 @@
 .productContainer {
     display: flex;
     margin-top: 5%;
-    margin-left: 13%;
     align-items: center;
     gap: 50px;
-    max-width: 80%;
+    max-width: 75%;
+    margin-left: 10%;
+    margin-right: 10%;
     
 }
 
@@ -355,7 +359,7 @@
     
 }
 
-.designerContainer{
+.designerContainer {
     display: flex;
     justify-content: space-between;
     gap: 18px;
@@ -365,32 +369,300 @@
     margin-right: 10%;
 }
 
-.designerCard1{
+
+.designerCard1 {
     width: 430px;
     height: 566px;
-    top: 5027px;
-    left: 176px;
-    opacity: 1;
     border-radius: 3px;
-    background-color:#D3E2D7;  
+    background-color: #D3E2D7;
+    position: relative;
+    overflow: hidden;
 }
+
+
+.DC1 {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+    margin: 0;
+}
+
+
 
 .designerCard2{
     width: 430px;
     height: 566px;
-    top: 5027px;
-    left: 176px;
-    opacity: 1;
     border-radius: 3px;
-    background-color:#2f32302a;  
+    background-color: #3c423e47;
+    position: relative;
+    overflow: hidden;
 }
 
 .designerCard3{
     width: 430px;
     height: 566px;
-    top: 5027px;
-    left: 176px;
-    opacity: 1;
     border-radius: 3px;
+    position: relative;
+    overflow: hidden;
     background-color:#2f323059;  
 }
+
+
+.DC1{
+    height: 570px;
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    
+    
+}
+
+.DC2{
+    height: 960px;
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+    
+}
+
+.DC3{
+
+    height: 570px;
+    width: 430px;
+    object-fit: cover;
+    overflow: hidden;
+
+    
+}
+
+
+
+.feedbackSection{
+    margin-top: 5%;
+    text-align: center;
+    font-size: 2rem;
+    color: #224F34;
+    margin-bottom: 60px;
+}
+
+.feedbackSection {
+    width: 80%;
+    max-width: 1200px;
+    margin: 80px auto;
+}
+
+.feedbackHeading {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 45px;
+}
+
+.testimonialContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.testimonialCard {
+    width: calc((100% - 50px) / 3);
+    min-height: 180px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+}
+
+.testimonialCard.active {
+    background-color: #b9efce;
+}
+
+.quote {
+    font-size: 42px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #285b43;
+    font-family: Georgia, serif;
+}
+
+.testimonialCard h3 {
+    margin: 18px 0;
+    font-size: 17px;
+    color: #285b43;
+    font-family: Georgia, serif;
+}
+
+.testimonialCard p {
+    margin: 0;
+    font-size: 13.5px;
+    line-height: 1.4;
+    color: #666;
+}
+
+.testimonialButtons {
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    margin-top: 80px;
+}
+
+.testimonialButtons button {
+    width: 30px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+}
+
+.prevBtn {
+    background-color: white;
+    color: #285b43;
+}
+
+.nextBtn {
+    background-color: #b9efce;
+    color: #285b43;
+}
+
+.footer {
+    width: 100%;
+    background-color: #205737;
+    color: white;
+    padding: 60px 0;
+    box-sizing: border-box;
+}
+
+.footerContainer {
+    width: 80%;
+    max-width: 90%;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.2fr 0.7fr 0.7fr 1.4fr;
+    gap: 50px;
+}
+
+.footerBrand h2 {
+    margin: 0 0 32px;
+    font-family: Georgia, serif;
+    font-size: 38px;
+}
+
+.footerBrand h3,
+.footerColumn h3,
+.footerSubscribe h3 {
+    margin: 0 0 20px;
+    font-family: Georgia, serif;
+    font-size: 16px;
+}
+
+.socialIcons {
+    display: flex;
+    padding-left: 120px;
+    gap: 25px;
+}
+
+.socialIcons a {
+    width: 24px;
+    height: 24px;
+
+    border: 1px solid #b9e8c8;
+    border-radius: 4px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #b9e8c8;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.footerColumn a {
+    color: #b9e8c8;
+    text-decoration: none;
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.footerSubscribe h3 {
+    text-decoration-color: #66c8f0;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 2px;
+}
+
+.emailBox {
+    padding-left: 30%;
+    display: flex;
+    width: 80%;
+    height: 40px;
+}
+
+.emailBox input {
+    flex: 1;
+    min-width: 0;
+
+    padding: 0 18px;
+
+    border: 1px solid #b9e8c8;
+    border-right: none;
+
+    outline: none;
+
+    background-color: transparent;
+    color: white;
+
+    font-size: 14px;
+}
+
+.emailBox input::placeholder {
+    color: white;
+}
+
+.emailBox button {
+    width: 82px;
+
+    border: none;
+
+    background-color: #9ff0b8;
+    color: #205737;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+.footerBottom {
+    width: 80%;
+    max-width: 940px;
+    margin: 110px auto 0;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.footerLine {
+    height: 1px;
+    background-color: #9ee8b6;
+    flex: 1;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 25px;
+}
+
+.footerLinks a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+}
+
