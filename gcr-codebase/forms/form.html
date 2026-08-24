@@ -36,6 +36,9 @@
         }
 
         iframe {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
             min-height: 300px;
             border-radius: 10px;
@@ -55,10 +58,14 @@
             <input type="text" id="name" name="name" required>
         </div>
 
+        <br>
+
         <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" required>
         </div>
+        
+        <br>
 
         <div>
             <label for="branch">Branch:</label>
@@ -69,6 +76,8 @@
                 <opt value="ece">ECE</opt\ion>
             </select>
         </div>
+
+        <br>
 
         <fieldset id="select-skills">
             <legend>Select Skills:</legend>
@@ -86,6 +95,8 @@
             </label>
         </fieldset>
 
+        <br>
+
         <fieldset>
             <legend>Gender:</legend>
             <label>
@@ -102,15 +113,21 @@
             </label>
         </fieldset>
 
+        <br>
+
         <div>
             <label for="date">Date:</label>
             <input type="date" id="date" name="date" required>
         </div>
 
+        <br>
+
         <div>
             <label for="file">Upload file:</label>
             <input type="file" id="file" name="file">
         </div>
+
+        <br>
 
         <button type="submit">Submit</button>
     </form>
