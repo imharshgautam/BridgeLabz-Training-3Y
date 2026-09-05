@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: #f8fafc;
+    color: #1e293b;
+}
+
+header {
+    padding: 50px 10%;
+    background: #1e3a8a;
+    color: white;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+main {
+    max-width: 850px;
+    margin: 0 auto;
+    padding: 50px 25px;
+}
+
+.subheading {
+    color: #64748b;
+    font-weight: bold;
+}
+
+article p {
+    margin: 25px 0;
+    line-height: 1.9;
+    font-size: 1.1rem;
+}
+
+/* Enlarges the first letter of every paragraph. */
+article p::first-letter {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Makes the first line of every paragraph bold. */
+article p::first-line {
+    font-weight: bold;
+}
+
+mark {
+    background-color: #fde68a;
+    color: #713f12;
+    padding: 3px 6px;
+}
+
+blockquote {
+    margin: 40px 0;
+    padding: 25px;
+    border-left: 6px solid #2563eb;
+    background-color: #dbeafe;
+    line-height: 1.8;
+    font-style: italic;
+}

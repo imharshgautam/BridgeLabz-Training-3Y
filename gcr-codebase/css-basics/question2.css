@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    color: #172033;
+}
+
+header {
+    padding: 2rem;
+    text-align: center;
+    background: #172033;
+    color: white;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+.section {
+    min-height: 70vh;
+    padding: 8rem 10%;
+    text-align: center;
+    border-bottom: 5px solid white;
+}
+
+.section h2 {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.section p {
+    max-width: 700px;
+    margin: 2rem auto;
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+.history {
+    background: linear-gradient(135deg, #f5d0fe, #bae6fd);
+    background-attachment: fixed;
+}
+
+.culture {
+    background: radial-gradient(circle, #fde68a, #fca5a5, #c4b5fd);
+    background-attachment: fixed;
+}
+
+.food {
+    background: #dcfce7;
+}
+
+footer {
+    padding: 2rem;
+    text-align: center;
+    background: #172033;
+    color: white;
+}
